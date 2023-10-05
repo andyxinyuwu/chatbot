@@ -4,4 +4,4 @@ llama-index
 nltk
 transformers
 torch
-load_dotenv
+python-dotenv
