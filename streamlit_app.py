@@ -6,19 +6,16 @@ from llama_index.llms import OpenAI
 import openai
 from llama_index import SimpleDirectoryReader, load_index_from_storage
 
-st.set_page_config(page_title="Chat with the Streamlit docs, powered by LlamaIndex", page_icon="🦙", layout="centered",
+st.set_page_config(page_title="Chat with the Pietra's FAQ docs, powered by LlamaIndex", page_icon="🦙", layout="centered",
                    initial_sidebar_state="auto", menu_items=None)
 
 load_dotenv()
 openai.api_key = os.environ.get('OPENAI_API_KEY')
-st.title("Chat with the Streamlit docs, powered by LlamaIndex 💬🦙")
-st.info(
-    "Check out the full tutorial to build this app in our [blog post](https://blog.streamlit.io/build-a-chatbot-with-custom-data-sources-powered-by-llamaindex/)",
-    icon="📃")
+st.title("Chat with the Pietra's FAQ docs")
 
 if "messages" not in st.session_state.keys():  # Initialize the chat messages history
     st.session_state.messages = [
-        {"role": "assistant", "content": "Ask me a question about Streamlit's open-source Python library!"}
+        {"role": "assistant", "content": "Ask me a question about Pietra's FAQ!"}
     ]
 
 
