@@ -5,4 +5,3 @@ nltk
 transformers
 torch
 python-dotenv
-dotenv
