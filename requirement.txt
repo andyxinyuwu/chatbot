@@ -4,3 +4,4 @@ llama-index
 nltk
 transformers
 torch
+dotenv
